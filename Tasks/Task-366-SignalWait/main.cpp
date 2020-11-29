@@ -52,7 +52,7 @@ void task1()
 
     printf("Task 1 Waiting to start\n");
     ThisThread::flags_wait_any(4);
-    printf("Task 2 starts\n");
+    printf("Task 1 starts\n");
     ThisThread::sleep_for(50ms);
     ThisThread::flags_clear(4); //Switch bounce can send multiples
 
